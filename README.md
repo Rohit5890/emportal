@@ -20,6 +20,13 @@ Following above steps must open following screen on your browser, where you can 
 ## **Preview**
 ![emportal](https://user-images.githubusercontent.com/11410696/44001367-616ac8e4-9e4e-11e8-9b6d-aa62495972d2.gif)
 
+# Test App
+Follow below commands to run test cases for app
+```
+npm run test
+
+```
+
 # Author
 @Rohit5890
 
