@@ -1,0 +1,102 @@
+body{
+  text-align: center;
+}
+.page-title {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);  
+}
+.spinner-wrap{
+  position: absolute;
+  width: 100%;
+  height: 480px; 
+  text-align: center;
+  padding-top: 20px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(146, 131, 131);
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+} 
+
+form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin: 34px;
+  padding: 20px;
+  background: #607d8b;
+}
+
+form > *, form > button{
+  margin: 5px 20px;
+}
+form label.ms-Dropdown-label {
+  color: #ffffff;
+}
+
+form span.ms-Dropdown-title {
+  min-width: 180px;
+}
+
+.details-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emp-wrap {
+  min-width: 400px;
+  font-size: 14px;
+  border: 2px solid #000;
+  padding: 20px;
+  background: #00bcd3;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+  .emp-wrap {
+    min-width: 200px;
+  }
+}
+.emp-wrap  span{
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0px 3px 5px slategrey;
+  background: #fff;
+}
+.ms-Image img, .emp-wrap  {
+  margin: 0 auto;
+}
+
+.ms-Image img {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 2px 4px 4px rgba(0,0,0,0.25), 4px 3px 12px rgba(0,0,0,0.22)
+}
